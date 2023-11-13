@@ -1,0 +1,59 @@
+/* 
+    Author: Joshua Osho
+    URL: https://themanosho.netlify.app
+    V: 1.0.0
+    Website: Talisha College
+    Initial: 19th of Oct, 2023
+    Imports: custom css, w3 css & w3 js, hover effects library & animation effects on scroll from github, 
+             font awesome icons, google fonts 
+*/
+
+/* Table of Content **/
+/*
+    1- Global
+    2- Colors: Classic, Modern, Academic Green
+    3- Borders
+    4- Texts
+    5- Paddings
+    6- Media Screens
+    7- General
+*/
+
+/*  media screens */
+/*  large screens - (min-width: 1023px)
+    medium screens - (min-width: 767px) and (max-width: 1023px)
+    small screens - (max-width: 767px)
+*/
+
+/* small screens */
+@media screen and (max-width: 767px) {
+    .logo img {
+        width: 30%;
+    }
+    .menu {
+        padding: 13px 24px !important
+    }
+    .menu i {
+        font-size: 1rem;
+    }
+}
+
+/* medium screens */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .logo img {
+        width: 35%;
+    }
+    .menu {
+        padding: 35px 28px !important
+    }
+    .menu i {
+        font-size: 2rem;
+    }
+}
+
+/* large screens */
+@media screen and (min-width: 1023px) {
+    .logo img {
+        width: 55%;
+    }
+}

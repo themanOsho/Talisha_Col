@@ -1,0 +1,178 @@
+/* 
+    Author: Joshua Osho
+    URL: https://themanosho.netlify.app
+    V: 1.0.0
+    Website: Talisha College
+    Initial: 19th of Oct, 2023
+    Imports: custom css, w3 css & w3 js, hover effects library & animation effects on scroll from github, 
+             font awesome icons, google fonts 
+*/
+
+/* Table of Content **/
+/*
+    1- Global
+    2- Colors: Classic, Modern, Academic Green
+    3- Borders
+    4- Texts
+    5- Paddings
+    6- Media Screens
+    7- General
+*/
+
+/* Global */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Color Schemes */
+/* backgrounds */
+.tc-navy-blue,
+.tc-navy-blue:hover {
+    color: #fff !important;
+    background-color:  #003366 !important;
+}
+.tc-burnt-orange,
+.tc-burnt-orange:hover {
+    color: #fff !important;
+    background-color:  #CC6600 !important;
+}
+.tc-crimson-red,
+.tc-crimson-red:hover {
+    color: #fff !important;
+    background-color:  #990000 !important;
+}
+.tc-white,
+.tc-white:hover {
+    color: grey !important;
+    background-color:  #FFFFFF !important;
+}
+.tc-deep-blue,
+.tc-deep-blue:hover {
+    color: #fff !important;
+    background-color:  #006699 !important;
+}
+.tc-vibrant-orange,
+.tc-vibrant-orange:hover {
+    color: #fff !important;
+    background-color:  #FF9900 !important;
+}
+.tc-teal-green,
+.tc-teal-green:hover {
+    color: #fff !important;
+    background-color:  #00CC99 !important;
+}
+.tc-light-grey,
+.tc-light-grey:hover {
+    color: grey !important;
+    background-color:  #F5F5F5 !important;
+}
+.tc-forest-green,
+.tc-forest-green:hover {
+    color: #fff !important;
+    background-color:  #007F4E !important;
+}
+.tc-golden-color,
+.tc-golden-color:hover {
+    color: #fff !important;
+    background-color:  #FFC425 !important;
+}
+.tc-deep-turquoise,
+.tc-deep-turquoise:hover {
+    color: #fff !important;
+    background-color:  #264653 !important;
+}
+.tc-light-mint,
+.tc-light-mint:hover {
+    color: grey !important;
+    background-color:  #F1FAEE !important;
+}
+
+/* text */
+.tc-text-navy-blue,
+.tc-text-navy-blue:hover {
+    color:  #003366 !important;
+}
+.tc-text-burnt-orange,
+.tc-text-burnt-orange:hover {
+    color:  #CC6600 !important;
+}
+.tc-text-crimson-red,
+.tc-text-crimson-red:hover {
+    color:  #990000 !important;
+}
+.tc-text-white,
+.tc-text-white:hover {
+    color:  #FFFFFF !important;
+}
+.tc-text-deep-blue,
+.tc-text-deep-blue:hover {
+    color:  #006699 !important;
+}
+.tc-text-vibrant-orange,
+.tc-text-vibrant-orange:hover {
+    color:  #FF9900 !important;
+}
+.tc-text-teal-green,
+.tc-text-teal-green:hover {
+    color:  #00CC99 !important;
+}
+.tc-text-light-grey,
+.tc-text-light-grey:hover {
+    color:  #F5F5F5 !important;
+}
+.tc-text-forest-green,
+.tc-text-forest-green:hover {
+    color:  #007F4E !important;
+}
+.tc-text-golden-color,
+.tc-text-golden-color:hover {
+    color:  #FFC425 !important;
+}
+.tc-text-deep-turquoise,
+.tc-text-deep-turquoise:hover {
+    color:  #264653 !important;
+}
+.tc-text-light-mint,
+.tc-text-light-mint:hover {
+    color:  #F1FAEE !important;
+}
+
+/* general */
+
+header {
+    width: 100%;
+}
+
+header a, button {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+header button {
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.apply button {
+    border: none;
+    padding: 8px 32px; 
+    cursor: pointer;
+    background-color:  #CC6600 !important;
+    text-align: center;
+    color:  #fff !important;
+    text-decoration: none;
+    text-transform: none;
+}
+
+video {
+    pointer-events: none;
+}
