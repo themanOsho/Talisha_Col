@@ -19,62 +19,262 @@
     7- General
 */
 
-/*  media screens */
-/*  large screens - (min-width: 1023px)
-    medium screens - (min-width: 767px) and (max-width: 1023px)
-    small screens - (max-width: 767px)
-*/
-
-/* small screens */
-@media screen and (max-width: 767px) {
-    .logo img {
-        width: 60%;
-    }
-    .menu {
-        padding: 24px 24px !important
-    }
-    .menu i {
-        font-size: 2.2rem;
-    }
-    /* index */
-    section.logoTag {
-        min-height: 50vh !important;
-    }
-    div.signin {
-        min-height: 100vh !important;
-    }
+/* Global */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* medium screens */
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-    .logo img {
-        width: 60%;
-    }
-    .menu {
-        padding: 48px !important
-    }
-    .menu i {
-        font-size: 4.5rem;
-    }
-    /* index */
-    section.logoTag {
-        min-height: 50vh !important;
-    }
-    div.signin {
-        height: 100vh !important;
-    }
+body {
+    width: 100% !important;
 }
 
-/* large screens */
-@media screen and (min-width: 1023px) {
-    .logo img {
-        width: 55%;
-    }
-    /* index */
-    section.logoTag {
-        height: 100vh !important;
-    }
-    div.signin {
-        height: 100vh !important;
-    }
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Color Schemes */
+/* backgrounds */
+.tc-navy-blue,
+.tc-navy-blue:hover {
+    color: #fff !important;
+    background-color:  #003366 !important;
+}
+.tc-burnt-orange,
+.tc-burnt-orange:hover {
+    color: #fff !important;
+    background-color:  #CC6600 !important;
+}
+.tc-crimson-red,
+.tc-crimson-red:hover {
+    color: #fff !important;
+    background-color:  #990000 !important;
+}
+.tc-white,
+.tc-white:hover {
+    color: grey !important;
+    background-color:  #FFFFFF !important;
+}
+.tc-deep-blue,
+.tc-deep-blue:hover {
+    color: #fff !important;
+    background-color:  #006699 !important;
+}
+.tc-vibrant-orange,
+.tc-vibrant-orange:hover {
+    color: #fff !important;
+    background-color:  #FF9900 !important;
+}
+.tc-teal-green,
+.tc-teal-green:hover {
+    color: #fff !important;
+    background-color:  #00CC99 !important;
+}
+.tc-light-grey,
+.tc-light-grey:hover {
+    color: grey !important;
+    background-color:  #F5F5F5 !important;
+}
+.tc-forest-green,
+.tc-forest-green:hover {
+    color: #fff !important;
+    background-color:  #007F4E !important;
+}
+.tc-golden-color,
+.tc-golden-color:hover {
+    color: #fff !important;
+    background-color:  #FFC425 !important;
+}
+.tc-deep-turquoise,
+.tc-deep-turquoise:hover {
+    color: #fff !important;
+    background-color:  #264653 !important;
+}
+.tc-light-mint,
+.tc-light-mint:hover {
+    color: grey !important;
+    background-color:  #F1FAEE !important;
+}
+
+/* text */
+.tc-text-navy-blue,
+.tc-text-navy-blue:hover {
+    color:  #003366 !important;
+}
+.tc-text-burnt-orange,
+.tc-text-burnt-orange:hover {
+    color:  #CC6600 !important;
+}
+.tc-text-crimson-red,
+.tc-text-crimson-red:hover {
+    color:  #990000 !important;
+}
+.tc-text-white,
+.tc-text-white:hover {
+    color:  #FFFFFF !important;
+}
+.tc-text-deep-blue,
+.tc-text-deep-blue:hover {
+    color:  #006699 !important;
+}
+.tc-text-vibrant-orange,
+.tc-text-vibrant-orange:hover {
+    color:  #FF9900 !important;
+}
+.tc-text-teal-green,
+.tc-text-teal-green:hover {
+    color:  #00CC99 !important;
+}
+.tc-text-light-grey,
+.tc-text-light-grey:hover {
+    color:  #F5F5F5 !important;
+}
+.tc-text-forest-green,
+.tc-text-forest-green:hover {
+    color:  #007F4E !important;
+}
+.tc-text-golden-color,
+.tc-text-golden-color:hover {
+    color:  #FFC425 !important;
+}
+.tc-text-deep-turquoise,
+.tc-text-deep-turquoise:hover {
+    color:  #264653 !important;
+}
+.tc-text-light-mint,
+.tc-text-light-mint:hover {
+    color:  #F1FAEE !important;
+}
+
+/* general */
+
+/* index */
+div.tagline {
+    width: 100% !important;
+}
+label {
+    color: #fff !important;
+    font-weight: 600;
+}
+input {
+    border-radius: 4px;
+}
+
+div.login {
+    width: 100% !important;
+    padding: 64px !important;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+form.login button {
+    border: none;
+    padding: 8px 32px !important; 
+    cursor: pointer;
+    background-color:  #CC6600 !important;
+    text-align: center;
+    color:  #fff !important;
+    text-decoration: none;
+    text-transform: none;
+    width: 100% !important;
+    border-radius: 4px;
+}
+div.submitNewcomer {
+    margin-top: 1rem !important;
+}
+div.newcomer {
+    padding: 4px 16px !important; 
+}
+div.newcomer p {
+    margin-top: 0.5rem !important;
+}
+div.newcomer a {
+    color:  #CC6600 !important;
+    font-weight: 600;
+}
+div.newcomer a:hover {
+    color:  #e1882e !important;
+}
+
+/* sign-up */
+div.sign-up {
+    width: 100% !important;
+    padding: 64px !important;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    display: none;
+}
+
+div.level, div.gender {
+    padding: 4px !important;
+}
+
+div.sign-up select {
+    width: 100%;
+    padding: 8px;
+}
+
+form.sign-up button {
+    border: none;
+    padding: 8px 32px !important; 
+    cursor: pointer;
+    background-color:  #CC6600 !important;
+    text-align: center;
+    color:  #fff !important;
+    text-decoration: none;
+    text-transform: none;
+    width: 100% !important;
+    border-radius: 4px;
+}
+
+div.createAccount {
+    margin-top: 1rem !important;
+}
+div.user {
+    padding: 4px 16px !important; 
+}
+div.user p {
+    margin-top: 0.5rem !important;
+}
+div.user a {
+    color:  #CC6600 !important;
+    font-weight: 600;
+}
+div.user a:hover {
+    color:  #e1882e !important;
+}
+
+/*** end index ***/
+
+/* home */
+header {
+    width: 100%;
+}
+
+header a, button {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+header button {
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.apply button {
+    border: none;
+    padding: 8px 32px; 
+    cursor: pointer;
+    background-color:  #CC6600 !important;
+    text-align: center;
+    color:  #fff !important;
+    text-decoration: none;
+    text-transform: none;
+}
+
+video {
+    pointer-events: none;
 }
