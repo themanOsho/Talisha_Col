@@ -38,7 +38,10 @@
     }
     /* index */
     section.logoTag {
-        height: 50vh !important;
+        min-height: 50vh !important;
+    }
+    div.signin {
+        min-height: 100vh !important;
     }
 }
 
@@ -55,7 +58,10 @@
     }
     /* index */
     section.logoTag {
-        height: 50vh !important;
+        min-height: 50vh !important;
+    }
+    div.signin {
+        height: 100vh !important;
     }
 }
 
@@ -66,6 +72,9 @@
     }
     /* index */
     section.logoTag {
+        height: 100vh !important;
+    }
+    div.signin {
         height: 100vh !important;
     }
 }
