@@ -61,7 +61,7 @@
         min-height: 50vh !important;
     }
     div.signin {
-        height: 100vh !important;
+        min-height: 100vh !important;
     }
 }
 
