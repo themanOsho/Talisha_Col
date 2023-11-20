@@ -216,6 +216,10 @@ div.sign-up select {
     padding: 8px;
 }
 
+select {
+    border-radius: none !important;
+}
+
 form.sign-up button {
     border: none;
     padding: 8px 32px !important; 
