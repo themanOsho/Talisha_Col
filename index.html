@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talisha College - Best education that suits your child</title>
+    <title>Student login - Talisha College</title>
     <link rel="icon" href="media/aaf_logo.png" type="image/x-icon"> 
     <link rel="stylesheet" href="css/tc-admin.css">
     <link rel="stylesheet" href="css/media_screens.css">
@@ -17,72 +17,110 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo:wght@500&family=Fjalla+One&family=Neuton&family=Teko:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="w3-hide-small w3-hide-medium">
-        <div class="header-top w3-row">
-            <div class="w3-col l6 tc-navy-blue tc-text-white w3-padding">
-                <a href="#" class="w3-padding">Students</a>
-                <a href="#" class="w3-padding">Staffs</a>
-                <a href="#" class="w3-padding">Alumni</a>
-                <a href="#" class="w3-padding">Research</a>
-            </div>
-            <div class="w3-col l6 tc-navy-blue tc-text-white w3-right-align w3-padding">
-                <a href="#" class="w3-padding"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="w3-padding"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" class="w3-padding"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="w3-padding"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
     <main>
-        <div class="banner w3-display-container">
-            <header class="transparent-header w3-row w3-display-topmiddle">
-                <div class="w3-col l2 m4 s4 logo w3-padding">
-                    <img src="images/logo_.png" alt="" class="w3-image">
+        <section class="w3-row w3-border">
+            <section class="w3-col l6 m12 s12 w3-card-4 w3-display-container logoTag w3-light-grey">
+                <img src="images/logo_.png" alt="" width="100%" class="w3-image w3-opacity">
+                <div class="w3-padding-large w3-display-bottommiddle tagline w3-center">
+                    <p class="tc-text-navy-blue">Best education that suits your child - <i class="fa-solid fa-copyright"></i> 2023</p>
                 </div>
-                <div class="w3-col l8 tc-text-navy-blue w3-padding-32 w3-right-align w3-hide-small w3-hide-medium">
-                    <a href="#" class="w3-padding">The College</a>
-                    <div class="w3-dropdown-hover">
-                        <button class="w3-button">Academics <i class="fa-solid fa-caret-down"></i></button>
-                        <div class="w3-dropdown-content w3-bar-block w3-border">
-                        <a href="#" class="w3-bar-item w3-button">Faculty of Arts</a>
-                        <a href="#" class="w3-bar-item w3-button">Faculty of Science</a>
-                        <a href="#" class="w3-bar-item w3-button">Faculty of Commerce</a>
-                        </div>
+            </section>
+            <section class="w3-col l6 m12 s12 tc-navy-blue">
+                <div class="w3-display-container signin">
+                    <div id="login" class="login w3-display-middle w3-animate-opacity">
+                        <form action="#" class="login">
+                            <label for="mail">Email Address:
+                            <input class="w3-input" type="email" name="email" placeholder="Enter your email address here" required></label><br>
+                            <label for="password">Password:
+                            <input class="w3-input" type="password" name="pwd" placeholder="Enter password to sign in" required></label>
+                            <div class="w3-row submitNewcomer">
+                                <div class="w3-col l3">
+                                    <button type="submit">Login</button>
+                                </div>
+                                <div class="newcomer w3-col l9">
+                                    <p>Newcomer? Create an account <a id="toggleButton">here!</a></p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="w3-dropdown-hover">
-                        <button class="w3-button">Admissions <i class="fa-solid fa-caret-down"></i></button>
-                        <div class="w3-dropdown-content w3-bar-block w3-border">
-                        <a href="#" class="w3-bar-item w3-button">Pre Degree</a>
-                        <a href="#" class="w3-bar-item w3-button">Undergraduate</a>
-                        <a href="#" class="w3-bar-item w3-button">Post Graduate</a>
-                        </div>
+                    <div id="signUp" class="sign-up w3-animate-opacity">
+                        <form action="#" class="sign-up"> 
+                            <label for="fullName">Full Name:
+                            <input class="w3-input" type="text" name="fullName" placeholder="First name and surname" required></label><br>
+                            <label for="mail">Email Address:
+                            <input class="w3-input" type="email" name="email" placeholder="Enter your email address here" required></label><br>
+                            <label for="school">Name of Institution:
+                            <input class="w3-input" type="text" name="school" placeholder="Eg: University of Lagos, Akoka - Lagos" required></label><br>
+                            <div class="w3-row">
+                                <div class="w3-col l6 level">
+                                    <label for="level">Current Level: </label><br>
+                                        <select name="gender" id="" required>
+                                        <option value="firstYear">100lvl / ND 1</option>
+                                        <option value="secondYear">100lvl / ND 1</option>
+                                        <option value="thirdYear">100lvl / ND 1</option>
+                                        <option value="fouthYear">100lvl / ND 1</option>
+                                        <option value="aboveYear">Other? Please specify</option>
+                                    </select><br>
+                                </div>
+                                <div class="w3-col l6 gender">
+                                    <label for="gender">Gender:</label><br>
+                                    <select name="gender" id="" required>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select><br>
+                                </div>
+                            </div><br>
+                            <label for="password">Password:
+                            <input class="w3-input" type="password" name="pwd" placeholder="Enter password for use" required> </label>
+                            <div class="w3-row createAccount">
+                                <div class="w3-col l3">
+                                    <button type="submit">Sign Up</button>
+                                </div>
+                                <div class="user w3-col l9">
+                                    <p>If you have an account with us, login <a id="backToLogin">here!</a></p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <a href="#" class="w3-padding">Gallery</a>
-                    <div class="w3-dropdown-hover">
-                        <button class="w3-button">Help! <i class="fa-solid fa-caret-down"></i></button>
-                        <div class="w3-dropdown-content w3-bar-block w3-border">
-                        <a href="#" class="w3-bar-item w3-button">Help Desk</a>
-                        <a href="#" class="w3-bar-item w3-button">Admission Requirements</a>
-                        <a href="#" class="w3-bar-item w3-button"></a>
-                        </div>
-                    </div>
                 </div>
-                <div class="w3-col l2 m8 s8 apply w3-padding w3-center w3-padding-32 w3-border w3-hide-small w3-hide-medium">
-                    <button class="w3-white w3-round-large">Apply</button>
-                </div>
-                <div class="w3-col l2 m8 s8 apply w3-right-align menu w3-hide-large">
-                    <i class="fa-solid fa-bars tc-text-navy-blue"></i>
-                </div>
-            </header>
-            <video loop width="100%" height="600" autoplay style="display: block; object-fit: fill;">
-                <source src="videos/tc-banner_intro.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+            </section>
+        </section>
     </main>
-    <!-- scripts -->
     <script src="https://kit.fontawesome.com/c75a29d236.js" crossorigin="anonymous">
         // Fa fa Icons
     </script>
+    <!-- animate on scroll https://unpkg.com/browse/aos@3.0.0-beta.6/README.md -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- toggle login and sign-up form -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get references to the divs and the button
+            var login = document.getElementById('login');
+            var signUp = document.getElementById('signUp');
+            var toggleButton = document.getElementById('toggleButton');
+            var backToLoginButton = document.getElementById('backToLogin');
+
+            // Add click event listener to the button
+            toggleButton.addEventListener('click', function() {
+                // Toggle the display property of divA and divB
+                if (login.style.display !== 'none') {
+                    login.style.display = 'none';
+                    signUp.style.display = 'block';
+                } else {
+                    login.style.display = 'block';
+                    signUp.style.display = 'none';
+                }
+            });
+
+            // Add click event listener to the backToLogin button
+            backToLoginButton.addEventListener('click', function() {
+                // Hide signUp and show login
+                signUp.style.display = 'none';
+                login.style.display = 'block';
+            });
+        });
+    </script>
 </body>
-</html>
