@@ -36,6 +36,10 @@
     .menu i {
         font-size: 2.2rem;
     }
+    /* index */
+    section.logoTag {
+        height: 50vh !important;
+    }
 }
 
 /* medium screens */
@@ -49,11 +53,19 @@
     .menu i {
         font-size: 4.5rem;
     }
+    /* index */
+    section.logoTag {
+        height: 50vh !important;
+    }
 }
 
 /* large screens */
 @media screen and (min-width: 1023px) {
     .logo img {
         width: 55%;
+    }
+    /* index */
+    section.logoTag {
+        height: 100vh !important;
     }
 }
