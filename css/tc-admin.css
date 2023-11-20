@@ -27,6 +27,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+body {
+    width: 100% !important;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -147,6 +151,110 @@ a {
 
 /* general */
 
+/* index */
+section.logoTag {
+    height: 100vh !important;
+}
+div.tagline {
+    width: 100% !important;
+}
+div.signin {
+    height: 100vh !important;
+}
+label {
+    color: #fff !important;
+    font-weight: 600;
+}
+input {
+    border-radius: 4px;
+}
+
+div.login {
+    width: 100% !important;
+    padding: 64px !important;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+form.login button {
+    border: none;
+    padding: 8px 32px !important; 
+    cursor: pointer;
+    background-color:  #CC6600 !important;
+    text-align: center;
+    color:  #fff !important;
+    text-decoration: none;
+    text-transform: none;
+    width: 100% !important;
+    border-radius: 4px;
+}
+div.submitNewcomer {
+    margin-top: 1rem !important;
+}
+div.newcomer {
+    padding: 4px 16px !important; 
+}
+div.newcomer p {
+    margin-top: 0.5rem !important;
+}
+div.newcomer a {
+    color:  #CC6600 !important;
+    font-weight: 600;
+}
+div.newcomer a:hover {
+    color:  #e1882e !important;
+}
+
+/* sign-up */
+div.sign-up {
+    width: 100% !important;
+    padding: 64px !important;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    display: none;
+}
+
+div.level, div.gender {
+    padding: 4px !important;
+}
+
+div.sign-up select {
+    width: 100%;
+    padding: 8px;
+}
+
+form.sign-up button {
+    border: none;
+    padding: 8px 32px !important; 
+    cursor: pointer;
+    background-color:  #CC6600 !important;
+    text-align: center;
+    color:  #fff !important;
+    text-decoration: none;
+    text-transform: none;
+    width: 100% !important;
+    border-radius: 4px;
+}
+
+div.createAccount {
+    margin-top: 1rem !important;
+}
+div.user {
+    padding: 4px 16px !important; 
+}
+div.user p {
+    margin-top: 0.5rem !important;
+}
+div.user a {
+    color:  #CC6600 !important;
+    font-weight: 600;
+}
+div.user a:hover {
+    color:  #e1882e !important;
+}
+
+/*** end index ***/
+
+/* home */
 header {
     width: 100%;
 }
