@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Talisha College</title>
+    <link rel="icon" href="media/aaf_logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="css/tc-admin.css">
+    <link rel="stylesheet" href="css/media_screens.css">
+    <link rel="stylesheet" href="css/w3/w3.css">
+    <script src="js/w3.js"></script>
+    <link rel="stylesheet" href="css/hover/hover-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo:wght@500&family=Fjalla+One&family=Neuton&family=Teko:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="w3-row">
+            <section class="w3-col l6 m12 s12 w3-card-4 w3-display-container logoTag w3-light-grey">
+                <img src="images/logo_.png" alt="" width="100%" class="w3-image w3-opacity">
+                <div class="w3-padding-large w3-display-bottommiddle tagline w3-center">
+                    <p class="tc-text-burnt-orange">Best education that suits your child.</p>
+                </div>
+            </section>
+            <section class="w3-col l6 m12 s12 tc-navy-blue">
+                <div class="w3-display-container signin">
+                    <div id="login" class="login w3-display-middle w3-animate-opacity">
+                        <form action="login.php" method="POST" class="login">
+                            <h1>Login</h1>
+                            <label for="mail">
+                            <input class="w3-input" type="email" name="email" placeholder="Enter your email address here" required></label><br>
+                            <label for="password">
+                            <input class="w3-input" type="password" name="pwd" placeholder="Enter password to sign in" required></label>
+                            <div class="w3-row submitNewcomer">
+                                <div class="w3-col l3 m5 s12">
+                                    <button type="submit" class="hvr-shrink">Login</button>
+                                </div>
+                                <div class="newcomer w3-col l9 m7 s12">
+                                    <p>Newcomer? Create an account <a id="toggleButton" class="hvr-pulse-shrink">here!</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="signUp" class="sign-up w3-display-middle w3-animate-opacity">
+                        <form action="register.php" method="POST" class="sign-up">
+                            <h1>Create an account</h1> 
+                            <label for="fullName">
+                            <input class="w3-input" type="text" name="fullName" placeholder="First name and surname" required></label><br>
+                            <label for="mail">
+                            <input class="w3-input" type="email" name="email" placeholder="Enter your email address here" required></label><br>
+                            <label for="school">
+                            <input class="w3-input" type="text" name="school" placeholder="Eg: University of Lagos, Akoka - Lagos" required></label><br>
+                            <div class="w3-row">
+                                <div class="w3-col l6 m6 s12 level">
+                                    <label for="level">
+                                    <input class="w3-input" type="text" name="level" placeholder="Eg. 100lvl/ND1" required></label><br>
+                                </div>
+                                <div class="w3-col l6 m6 s12 gender">
+                                    <label for="gender">
+                                    <input class="w3-input" type="text" name="gender" placeholder="Eg. Male" required></label><br>
+                                </div>
+                            </div>
+                            <label for="password">
+                            <input class="w3-input" type="password" name="password" placeholder="Enter password for use" required> </label>
+                            <div class="w3-row createAccount">
+                                <div class="w3-col l3 m5 s12">
+                                    <button type="submit" class="hvr-shrink">Sign Up</button>
+                                </div>
+                                <div class="user w3-col l9 m7 s12">
+                                    <p>If you have an account with us, login <a id="backToLogin" class="hvr-pulse-shrink">here!</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="w3-padding-large w3-display-bottommiddle tagline w3-center">
+                        <p class="w3-text-white">Talisha College - <i class="fa-solid fa-copyright"></i> 2023</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- Modal for incorrect password -->
+    <div id="passwordErrorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('passwordErrorModal')">&times;</span>
+            <p>Password is not correct.</p>
+        </div>
+    </div>
+
+    <!-- Modal for user not found -->
+    <div id="userNotFoundErrorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('userNotFoundErrorModal')">&times;</span>
+            <p>No user found with the login credentials that you've provided, please create an account instead.</p>
+        </div>
+    </div>
+    <!-- popup sucessful creation -->
+    <div class="registration-success w3-border w3-center w3-border-red w3-hide">
+        <svg class="checkmark w3-jumbo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> 
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/> 
+             <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+        </svg>
+        <p class="w3-xlarge">Registration successful!</p>
+        <p class="w3-text-grey">Wait while you're being redirects..</p>
+    </div>
+    <script src="path/to/modal.js">
+        // display the error msgs modal
+    </script>
+    <script src="https://kit.fontawesome.com/c75a29d236.js" crossorigin="anonymous">
+        // Fa fa Icons. Learn https://www.youtube.com/watch?v=2MpZwFoBPjQ
+    </script>
+    <!-- animate on scroll https://unpkg.com/browse/aos@3.0.0-beta.6/README.md -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- toggle login and sign-up form -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get references to the divs and the button
+            var login = document.getElementById('login');
+            var signUp = document.getElementById('signUp');
+            var toggleButton = document.getElementById('toggleButton');
+            var backToLoginButton = document.getElementById('backToLogin');
+
+            // Add click event listener to the button
+            toggleButton.addEventListener('click', function() {
+                // Toggle the display property of divA and divB
+                if (login.style.display !== 'none') {
+                    login.style.display = 'none';
+                    signUp.style.display = 'block';
+                } else {
+                    login.style.display = 'block';
+                    signUp.style.display = 'none';
+                }
+            });
+
+            // Add click event listener to the backToLogin button
+            backToLoginButton.addEventListener('click', function() {
+                // Hide signUp and show login
+                signUp.style.display = 'none';
+                login.style.display = 'block';
+            });
+        });
+    </script>
+</body>
